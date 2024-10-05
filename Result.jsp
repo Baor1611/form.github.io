@@ -23,6 +23,9 @@
             String[] announce = request.getParameterValues("announce");
                          
             String contact = request.getParameter("contact");
+            
+            out.print("<h2>Thank you</h2><br>");
+            out.print("Waiting for approving by advisor");            
         %>
             
     </body>
