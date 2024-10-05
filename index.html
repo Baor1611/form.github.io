@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            h2 {
+                color: green;
+            }
+            table {
+                border: 0px;
+                text-align: left;
+            }
+            table td {
+                width: 150px;
+            }
+            table h3 {
+                display:inline;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="Result.jsp">        
+            <img src="images/logo.png" alt="" style="width:150px;heigth:150px"/>
+
+            <h2>Survey</h2>
+            <p>If you have a momment, we'd appreciate it if you would fill out this survey</p>
+            <h2>Your information</h2>
+
+            <table>
+                <tr>
+                    <td><h3>First name</h3></td>    
+                    <td>
+                        <input type="text" name="fname" ><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>Last name</h3></td>    
+                    <td>
+                        <input type="text" name="lname" ><br>                        
+                    </td>
+                </tr>     
+                <tr>
+                    <td><h3>Email</h3></td>    
+                    <td>
+                        <input type="text" name="email" ><br>                        
+                    </td>
+                </tr>         
+                <tr>
+                    <td><h3>Date of Birth</h3></td>    
+                    <td>
+                        <input type="text" name="dob" ><br>                        
+                    </td>
+                </tr>                     
+            </table>
+            <h2>How did you hear about us</h2>
+                <input type="radio" name="how" value="Search engine"> Search engine
+                <input type="radio" name="how" value="Word of mouth"> Word of mouth
+                <input type="radio" name="how" value="Social of media"> Social of media
+                <input type="radio" name="how" value="Other"> Other
+                
+            <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+                <input type="checkbox" name="announce" value="1">Yes I'd like that
+                <br><br>
+                <input type="checkbox" name="announce" value="2">Yes please send me email announcements
+                <br><br>
+            Please contact me by:
+            <select name="contact">
+                <option>Email or postal mail</option>
+                <option>Email only</option>
+                <option>Postal mail only</option>
+            </select>
+            <br><br>
+            <input type="submit" value=Submit>            
+        </form>
+    </body>
+</html>
